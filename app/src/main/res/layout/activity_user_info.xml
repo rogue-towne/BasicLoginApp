@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkBlue">
+    <!--    android:padding="40dp">-->
+
+
+    <TextView
+        android:id="@+id/my_account_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="86dp"
+        android:fontFamily="@font/allerta_stencil"
+        android:text="@string/my_account"
+        android:textColor="@android:color/white"
+        android:textSize="60sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/passwordLabelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="31dp"
+        android:layout_marginBottom="210dp"
+        android:fontFamily="@font/allerta_stencil"
+        android:text="@string/password_label"
+        android:textColor="@android:color/white"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/usernameLabelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="31dp"
+        android:layout_marginBottom="38dp"
+        android:fontFamily="@font/allerta_stencil"
+        android:text="@string/username_label"
+        android:textColor="@android:color/white"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/usernameTextView"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/usernameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="37dp"
+        android:background="@android:color/white"
+        android:fontFamily="@font/allerta_stencil"
+        android:padding="12sp"
+        android:text="@string/key_username"
+        android:textColor="@color/darkGrey"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/passwordLabelTextView"
+        app:layout_constraintEnd_toEndOf="@+id/passwordLabelTextView"
+        app:layout_constraintStart_toEndOf="@+id/passwordLabelTextView" />
+
+    <TextView
+        android:id="@+id/passwordTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@android:color/white"
+        android:fontFamily="@font/allerta_stencil"
+        android:includeFontPadding="false"
+        android:padding="12sp"
+        android:text="@string/key_password"
+        android:textColor="@color/darkGrey"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/passwordLabelTextView"
+        app:layout_constraintStart_toEndOf="@+id/passwordLabelTextView"
+        app:layout_constraintTop_toBottomOf="@+id/passwordLabelTextView" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Did U8 my muffin</string>
+    <string name="key_username">userName</string>
+    <string name="key_password">password</string>
+    <string name="login">Login</string>
+    <string name="username_hint">Username</string>
+    <string name="password_hint">Password</string>
+    <string name="submit_button">Submit</string>
+    <string name="my_account">My account</string>
+    <string name="password_label">Password:</string>
+    <string name="username_label">Username:</string>
+</resources>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkBlue"
+    android:padding="40dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/app_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="80dp"
+        android:fontFamily="@font/allerta_stencil"
+        android:includeFontPadding="false"
+        android:text="@string/app_name"
+        android:textColor="@android:color/white"
+        android:textSize="34sp" />
+
+    <EditText
+        android:id="@+id/editTextEmailAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login"
+        android:background="@android:color/white"
+        android:backgroundTint="@android:color/white"
+        android:fontFamily="@font/allerta_stencil"
+        android:hint="@string/username_hint"
+        android:importantForAutofill="no"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        android:padding="10sp"
+        android:shadowColor="@color/darkGrey"
+        android:textColor="@color/Green"
+        android:textColorHint="@color/darkGrey" />
+
+    <EditText
+        android:id="@+id/editTextNumberPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextEmailAddress"
+        android:background="@android:color/white"
+        android:fontFamily="@font/allerta_stencil"
+        android:hint="@string/password_hint"
+        android:importantForAutofill="no"
+        android:inputType="numberPassword"
+        android:minHeight="48dp"
+        android:padding="10sp"
+        android:textColorHint="@color/darkGrey" />
+
+    <TextView
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/allerta_stencil"
+        android:text="@string/login"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        tools:text="@string/login" />
+
+    <Button
+        android:id="@+id/submit_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@android:color/white"
+        android:padding="20sp"
+        android:text="@string/submit_button"
+        android:textColor="@color/darkGrey"
+        android:textSize="24sp" />
+
+</RelativeLayout>
